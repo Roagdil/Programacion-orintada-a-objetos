@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego Pong Clásico</title>
+    <!-- Vinculamos el archivo de estilos CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="contenedor-juego">
+        <h1>PONG</h1>
+        
+        <!-- Contenedor relativo para posicionar el botón encima del canvas -->
+        <div class="zona-canvas">
+            <!-- Pantalla de inicio con el botón -->
+            <div id="pantallaInicio" class="pantalla-inicio">
+                <button id="botonIniciar">PRESIONÁ PARA JUGAR</button>
+            </div>
+            <!-- El canvas del juego -->
+            <canvas id="canvasPong" width="600" height="400"></canvas>
+        </div>
+
+        <p>Controles: Flecha Arriba / Flecha Abajo</p>
+    </div>
+
+    <!-- Vinculamos el archivo de lógica JavaScript usando 'src' -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+/* Centramos todo el contenido en la pantalla */
+body {
+    background-color: #111;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Alineamos los textos y estilizamos el contenedor */
+.contenedor-juego {
+    text-align: center;
+}
+
+h1 {
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+
+/* Contenedor para alinear el canvas y la pantalla de inicio */
+.zona-canvas {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+/* Le damos borde blanco al lienzo del juego */
+canvas {
+    background-color: #000;
+    border: 4px solid white;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* Capa negra transparente que va por encima del canvas al inicio */
+.pantalla-inicio {
+    position: absolute;
+    top: 4px; /* Alineado con el borde del canvas */
+    left: 4px;
+    width: 600px;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2; /* Asegura que esté por encima del canvas */
+}
+
+/* Estilo retro para el botón de inicio */
+#botonIniciar {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 15px 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+/* Efecto visual cuando pasás el mouse por encima del botón */
+#botonIniciar:hover {
+    background-color: white;
+    color: black;
+}
+
+p {
+    color: #888;
+    font-size: 14px;
+    margin-top: 15px;
+}

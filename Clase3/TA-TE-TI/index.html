@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ta-Te-Ti Sencillo</title>
+    <!-- Vinculamos el archivo de estilos CSS -->
+    <link rel="stylesheet" href="./Style/style.css">
+</head>
+<body>
+
+    <h1>Ta-Te-Ti</h1>
+    
+    <!-- Indicador de estado del juego -->
+    <div class="status" id="statusLabel">Turno del jugador X</div>
+
+    <!-- El tablero con las 9 celdas numeradas del 0 al 8 -->
+    <div class="board">
+        <button class="cell" data-index="0"></button>
+        <button class="cell" data-index="1"></button>
+        <button class="cell" data-index="2"></button>
+        <button class="cell" data-index="3"></button>
+        <button class="cell" data-index="4"></button>
+        <button class="cell" data-index="5"></button>
+        <button class="cell" data-index="6"></button>
+        <button class="cell" data-index="7"></button>
+        <button class="cell" data-index="8"></button>
+    </div>
+
+    <!-- Botón para reiniciar la partida -->
+    <button class="btn-reset" id="resetButton">Reiniciar Juego</button>
+
+    <!-- Vinculamos la lógica de JavaScript al final del body -->
+    <script src="./script/script.js"></script>
+</body>
+</html>
